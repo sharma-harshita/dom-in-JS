@@ -33,17 +33,34 @@ function handleChangeHeading (){
     value.style.backgroundColor = "hotpink"
 }
 
+// let count = 0;
+// function addItem(){
+//     let text = ["First div", "second div", "third div", "fourth div"];
 
-function addItem(){
-    const spanTag = document.createElement("span");
-    spanTag.setAttribute("class","element");
-    spanTag.innerHTML = `<h1>Hey</h1>`;
+//     const spanTag = document.createElement("span");
+//     spanTag.setAttribute("class","element");
 
-    
-    const parentDiv = document.getElementById("students");
-    parentDiv.appendChild(spanTag);
-    console.log(parentDiv);
-}
+//     spanTag.innerHTML = `<h1>${text[count]}</h1>`;
+
+//     const parentDiv = document.getElementById("students");
+//     parentDiv.appendChild(spanTag);
+//     console.log(parentDiv);
+//     count++;
+// }
 
 
 {/* <span class="element"></span> */}
+
+
+function addItem (){
+    const userGivenValue = document.getElementById("input").value;
+    // console.log(userGivenValue);
+
+    const spanTag = document.createElement("span");
+    spanTag.setAttribute("class","element");
+
+    spanTag.innerHTML = `<h1>${userGivenValue}</h1>`;
+
+    const parentDiv = document.getElementById("students");
+    parentDiv.appendChild(spanTag);
+}
