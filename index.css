@@ -1,0 +1,14 @@
+.parent{
+    display: flex;
+    border: 2px solid black;
+    width: 400px;
+    background: lightpink;
+}
+.child{
+    margin: 20px;
+    padding: 10px;
+    background-color: aqua;
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+}
