@@ -1,0 +1,12 @@
+.students{
+    display: flex;
+    background-color: silver;
+}
+
+.element {
+    height: 100px;
+    width: 100px;
+    background-color: #00ffff;
+    border: 2px solid red;
+    margin: 20px;
+}

@@ -14,9 +14,36 @@
 
 // third way to access elements by using id 
 
-function handleStyleChange(){
-    const value3 = document.getElementById("student");
-    value3.style.color="red"
+// function handleStyleChange(){
+//     const value3 = document.getElementById("student");
+//     value3.style.color="red"
+// }
+
+
+// const value = document.getElementById("content");
+
+// console.log("INNER HTML",value.innerHTML===value.innerText);
+// console.log("INNER TEXT",value.innerText);
+// console.log("INNER TEXT",value.innerHTML);
+
+
+function handleChangeHeading (){
+    const value = document.getElementById("heading");
+    value.innerText = "Document object Model";
+    value.style.backgroundColor = "hotpink"
 }
 
 
+function addItem(){
+    const spanTag = document.createElement("span");
+    spanTag.setAttribute("class","element");
+    spanTag.innerHTML = `<h1>Hey</h1>`;
+
+    
+    const parentDiv = document.getElementById("students");
+    parentDiv.appendChild(spanTag);
+    console.log(parentDiv);
+}
+
+
+{/* <span class="element"></span> */}
